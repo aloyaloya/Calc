@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, rgb(43, 0, 183), rgb(114, 0, 202));
+    font-family: 'Dosis', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.calc {
+    position: absolute;
+    height: auto;
+    width: auto;
+    min-width: 380px;
+    max-height: 610px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px black;
+    background-color: white;
+}
+
+.calc_display {
+    height: 120px;
+    width: 100%;
+    line-height: 110%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.buttons-row {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.buttons-row:last-child {
+    margin-bottom: 0;
+}
+
+.buttons-row button {
+    margin-right: 20px;
+}
+
+.buttons-row button:last-child {
+    margin-right: 0;
+}
+
+.calc_buttons button{
+    font-size: 30px;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    border: 0 solid;
+    border-radius: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+.calc_buttons .two-span {
+    width: 160px;
+    border-radius: 20px;
+}
+
+.calc_buttons .three-span {
+    width: 250px;
+    border-radius: 20px;
+}
+
+.calc_buttons button:active {
+    transform: scale(1.05);
+}
+
+.number {
+    background-color: rgb(170, 227, 248);
+}
+
+.number:hover {
+    background-color: rgba(170, 227, 248, 0.8)
+}
+
+.operation {
+    background-color: rgb(255, 192, 203);
+}
+
+.operation:hover {
+    background-color: rgba(255, 192, 203, 0.8);
+}
+
+.reset {
+    background-color: rgb(255, 221, 159);
+}
+
+.reset:hover {
+    background-color: rgba(255, 221, 159, 0.8);
+}
+
+.equals {
+    background-color: rgb(177, 252, 177);
+}
+
+.equals:hover {
+    background-color: rgba(177, 252, 177, 0.8);
+}
+
+
+
+
+
